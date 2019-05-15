@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CBT-WEBSITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mdb.css">
+   
+    
+</head>
+<body>
+      
+<div id="quiz"></div>
+<button id="submit">Get Results</button>
+<div id="results"></div>
+<script>
+;
+
+	var myQuestions = [
+	{
+		question: "What is 10/2?",
+		answers: {
+			a: '3',
+			b: '5',
+			c: '115'
+		},
+		correctAnswer: 'b'
+	},
+	{
+		question: "What is 30/3?",
+		answers: {
+			a: '3',
+			b: '5',
+			c: '10'
+		},
+		correctAnswer: 'c'
+	}
+];
+var main = document.getElementById("quiz");
+for(let i = 0; i < myQuestions.length; i++){
+	var c= document.createElement("div");
+	c.innerHTML=myQuestions[i].question + "<br>" + myQuestions[i].answers;
+	main.appendChild(c);
+};
+var
+for (a = 0; a<answers.length; a++){
+
+}
+
+
+</script>
+</body>
+</html>

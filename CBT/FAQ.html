@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CBT-WEBSITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mdb.css">
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+  <html lang="en" class="full-height">
+</div>
+<header style="height: 20% !important;">
+ 
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar primary-color">
+         <!-- Navbar brand -->
+        <img src="twitter.png" width="60px">
+      
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+      
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
+            </li>
+           
+      
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">About-Us</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">About-me</a>
+                <a class="dropdown-item" href="#">Project Description</a>
+                <a class="dropdown-item" href="FAQ.html">FAQ</a>
+              </div>
+            </li>
+      
+          </ul>
+          <!-- Links -->
+      
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+       </nav>
+    </header>
+    <!--Modal: Login / Register Form-->
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+          <!--Content-->
+          <div class="modal-content">
+      
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+      
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                    Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                    Register</a>
+                </li>
+              </ul>
+      
+              <!-- Tab panels -->
+              <div class="tab-content">
+                <!--Panel 7-->
+                <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+      
+                  <!--Body-->
+                  <div class="modal-body mb-1">
+                    <div class="md-form form-sm mb-5">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+      
+                    <div class="md-form form-sm mb-4">
+                      <i class="fas fa-lock prefix"></i>
+                      <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                    </div>
+                    <div class="text-center mt-2">
+                      <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                    </div>
+                  </div>
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <div class="options text-center text-md-right mt-1">
+                      <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                      <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                    </div>
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                  </div>
+      
+                </div>
+                <!--/.Panel 7-->
+      
+                <!--Panel 8-->
+                <div class="tab-pane fade" id="panel8" role="tabpanel">
+      
+                  <!--Body-->
+                  <div class="modal-body">
+                    <div class="md-form form-sm mb-5">
+                      <i class="fas fa-envelope prefix"></i>
+                      <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                    </div>
+      
+                    <div class="md-form form-sm mb-5">
+                      <i class="fas fa-lock prefix"></i>
+                      <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                    </div>
+      
+                    <div class="md-form form-sm mb-4">
+                      <i class="fas fa-lock prefix"></i>
+                      <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                    </div>
+      
+                    <div class="text-center form-sm mt-2">
+                      <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                    </div>
+      
+                  </div>
+                  <!--Footer-->
+                  <div class="modal-footer">
+                    <div class="options text-right">
+                      <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                    </div>
+                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                <!--/.Panel 8-->
+              </div>
+      
+            </div>
+          </div>
+          <!--/.Content-->
+        </div>
+      </div>
+      <!--Modal: Login / Register Form-->
+<div class="articles">
+    <h2>
+        What do you need to know?
+    </h2>
+    
+        
+            <div class="article" id="m1">
+                
+                        <div class="events">
+                            <ul>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        15
+                                    </span><span class="month">
+                                        MAR
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/Mars/EUEEA-admission-round-courses-and-programmes-published-today/">Second admission round open for application →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="information"><span class="day">
+                                        &nbsp;
+                                    </span><span class="month">
+                                        &nbsp;
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/Mars/Weekly-tip-Applying-for-the-15-April-admission-round/">March tip: Applications reviewed until results published →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                        </ul></div>
+                                    
+                <div class="faq">                                                    
+                    <div class="humany-widget humany-list humany-en humany-calender-english-march humany-display-to-common-questions-lightbox humany-loaded"><div data-reactroot="" class="humany-toplist humany-guidelist humany-toplist humany-toplist-widget"><h2 class="humany-h2">Common questions</h2><ol class="humany-guide-list"><li><a href="#humany-common-questions-lightbox=/1109/when-should-i-apply-for-my-residence-permit/;referrer:calender-english-march" data-guide-id="1109" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 7 -->When should I apply for my residence permit?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1057/is-there-a-chance-for-me-to-be-offered-a-place-if-i-apply-late/;referrer:calender-english-march" data-guide-id="1057" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 11 -->Is there a chance for me to be offered a place if I apply late? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1060/i-was-deleted-from-a-course-that-i-wasn-t-eligible-for-but-i-ve-since-sent-in-the-necessary-documentation-do-i-need-to-reapply/;referrer:calender-english-march" data-guide-id="1060" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 15 -->I was deleted from a course that I wasn't eligible for, but I've since sent in the necessary documentation. Do I need to reapply? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1092/i-ve-been-admitted-on-condition-placed-on-reserve-on-condition-what-does-this-mean/;referrer:calender-english-march" data-guide-id="1092" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 19 -->I've been admitted on condition/placed on reserve on condition. What does this mean? <!-- /react-text --></a></li></ol><a href="#humany-common-questions-lightbox=/;referrer:calender-english-march" class="humany-pager" data-humany-tabstop="0"><b class="humany-icon"></b><!-- react-text: 22 -->Show more common questions<!-- /react-text --></a></div></div> 
+                    
+                    
+                </div>
+            </div>                
+        
+            <div class="article" id="m2">
+                
+                        <div class="events">
+                            <ul>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        4
+                                    </span><span class="month">
+                                        APR
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/April/Publishing-of-Notification-of-Selection-Results-for-masters-students-autumn-semester/">Selection results for master's applicants published →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        15
+                                    </span><span class="month">
+                                        APR
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/April/Last-day-to-apply-for-the-EUEEA-admissions-round-autumn-semester/">Last day to apply for the Second admission round, autumn semester →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        18
+                                    </span><span class="month">
+                                        APR
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/April/selection-results-for-bachelors-applicants-published2/">Selection results for bachelor's applicants published →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="maintenance"><span class="day">
+                                        &nbsp;
+                                    </span><span class="month">
+                                        &nbsp;
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/April/Technical-maintenance/">Technical maintenance 27 April, website will be unavailable →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="information"><span class="day">
+                                        &nbsp;
+                                    </span><span class="month">
+                                        &nbsp;
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/April/Weekly-tip-Reapplying/">Weekly tip: Reapplying →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="information"><span class="day">
+                                        &nbsp;
+                                    </span><span class="month">
+                                        &nbsp;
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/April/Weekly-tip-Replying-to-your-admission-offer/">Weekly tip: EU students can apply to the Second admission round →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="important"><span class="day">
+                                        &nbsp;
+                                    </span><span class="month">
+                                        &nbsp;
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/April/University-Admissions-now-on-Twitter/">University Admissions now on Twitter! →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                        </ul></div>
+                                    
+                <div class="faq">                                                    
+                    <div class="humany-widget humany-list humany-en humany-calender-english-april humany-display-to-common-questions-lightbox humany-loaded"><div data-reactroot="" class="humany-toplist humany-guidelist humany-toplist humany-toplist-widget"><h2 class="humany-h2">Common questions</h2><ol class="humany-guide-list"><li><a href="#humany-common-questions-lightbox=/1109/when-should-i-apply-for-my-residence-permit/;referrer:calender-english-april" data-guide-id="1109" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 7 -->When should I apply for my residence permit?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1140/when-should-i-pay-the-first-instalment-of-my-tuition-fee/;referrer:calender-english-april" data-guide-id="1140" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 11 -->When should I pay the first instalment of my tuition fee? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1099/when-will-i-find-out-if-i-ve-been-offered-a-place-if-i-was-on-reserve-or-submitted-a-late-application/;referrer:calender-english-april" data-guide-id="1099" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 15 -->When will I find out if I've been offered a place if I was on reserve or submitted a late application?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1092/i-ve-been-admitted-on-condition-placed-on-reserve-on-condition-what-does-this-mean/;referrer:calender-english-april" data-guide-id="1092" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 19 -->I've been admitted on condition/placed on reserve on condition. What does this mean? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1035/if-i-didn-t-get-a-place-in-the-first-round-should-i-apply-to-the-second-round/;referrer:calender-english-april" data-guide-id="1035" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 23 -->If I didn't get a place in the First round, should I apply to the Second round?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1883/do-i-have-to-reply-to-my-admissions-offer/;referrer:calender-english-april" data-guide-id="1883" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 27 -->Do I have to reply to my admissions offer?<!-- /react-text --></a></li></ol><a href="#humany-common-questions-lightbox=/;referrer:calender-english-april" class="humany-pager" data-humany-tabstop="0"><b class="humany-icon"></b><!-- react-text: 30 -->Show more common questions<!-- /react-text --></a></div></div> 
+                    
+                    
+                </div>
+            </div>                
+        
+            <div class="article current selected" id="m3">
+                
+                        <div class="events">
+                            <ul>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        7
+                                    </span><span class="month">
+                                        MAY
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/May/Last-day-to-document-exemption-from-application-fee-for-the-April-admission-round-autumn-semester/">Last day to document fee exemption for Second round, autumn →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="information"><span class="day">
+                                        &nbsp;
+                                    </span><span class="month">
+                                        &nbsp;
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/May/conditionally-admitted/">Are you conditionally admitted?</a>
+                                    </div>
+                                    <p>If you have any questions about what is required of you, contact your university directly for more information.</p>
+                                </div>
+                            </li>
+                    
+                        </ul></div>
+                                    
+                <div class="faq">                                                    
+                    <div class="humany-widget humany-list humany-en humany-calender-english-may humany-display-to-common-questions-lightbox humany-loaded"><div data-reactroot="" class="humany-toplist humany-guidelist humany-toplist humany-toplist-widget"><h2 class="humany-h2">Common questions</h2><ol class="humany-guide-list"><li><a href="#humany-common-questions-lightbox=/1109/when-should-i-apply-for-my-residence-permit/;referrer:calender-english-may" data-guide-id="1109" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 7 -->When should I apply for my residence permit?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1140/when-should-i-pay-the-first-instalment-of-my-tuition-fee/;referrer:calender-english-may" data-guide-id="1140" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 11 -->When should I pay the first instalment of my tuition fee? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1057/is-there-a-chance-for-me-to-be-offered-a-place-if-i-apply-late/;referrer:calender-english-may" data-guide-id="1057" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 15 -->Is there a chance for me to be offered a place if I apply late? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1141/i-need-to-pay-my-tuition-fees-but-haven-t-received-an-invoice-what-should-i-do/;referrer:calender-english-may" data-guide-id="1141" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 19 -->I need to pay my tuition fees but haven't received an invoice. What should I do? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1060/i-was-deleted-from-a-course-that-i-wasn-t-eligible-for-but-i-ve-since-sent-in-the-necessary-documentation-do-i-need-to-reapply/;referrer:calender-english-may" data-guide-id="1060" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 23 -->I was deleted from a course that I wasn't eligible for, but I've since sent in the necessary documentation. Do I need to reapply? <!-- /react-text --></a></li></ol><a href="#humany-common-questions-lightbox=/;referrer:calender-english-may" class="humany-pager" data-humany-tabstop="0"><b class="humany-icon"></b><!-- react-text: 26 -->Show more common questions<!-- /react-text --></a></div></div> 
+                    
+                    
+                </div>
+            </div>                
+        
+            <div class="article" id="m4">
+                
+                        <div class="events">
+                            <ul>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        3
+                                    </span><span class="month">
+                                        JUN
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/June/Application-period-starts/">Spring semester First round open for application →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        20
+                                    </span><span class="month">
+                                        JUN
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/June/Last-day-to-complete-your-application-for-the-April-admission-round-autumn-semester/">Last day to complete application for Second round, autumn →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                        </ul></div>
+                                    
+                <div class="faq">                                                    
+                    <div class="humany-widget humany-list humany-en humany-calender-english-june humany-display-to-common-questions-lightbox humany-loaded"><div data-reactroot="" class="humany-toplist humany-guidelist humany-toplist humany-toplist-widget"><h2 class="humany-h2">Common questions</h2><ol class="humany-guide-list"><li><a href="#humany-common-questions-lightbox=/1208/there-are-two-admission-rounds-to-choose-from-which-one-should-i-apply-to/;referrer:calender-english-june" data-guide-id="1208" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 7 -->There are two admission rounds to choose from. Which one should I apply to?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1052/how-many-courses-and-programmes-can-i-apply-for/;referrer:calender-english-june" data-guide-id="1052" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 11 -->How many courses and programmes can I apply for? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1083/how-will-i-know-if-everything-is-ok-with-the-documentation-i-submitted/;referrer:calender-english-june" data-guide-id="1083" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 15 -->How will I know if everything is OK with the documentation I submitted?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1036/how-do-i-know-which-courses-and-programmes-i-can-apply-for/;referrer:calender-english-june" data-guide-id="1036" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 19 -->How do I know which courses and programmes I can apply for? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1068/i-applied-for-admission-at-an-earlier-time-and-submitted-my-documents-do-i-need-to-submit-them-again/;referrer:calender-english-june" data-guide-id="1068" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 23 -->I applied for admission at an earlier time and submitted my documents. Do I need to submit them again? <!-- /react-text --></a></li></ol><a href="#humany-common-questions-lightbox=/;referrer:calender-english-june" class="humany-pager" data-humany-tabstop="0"><b class="humany-icon"></b><!-- react-text: 26 -->Show more common questions<!-- /react-text --></a></div></div> 
+                    
+                    
+                </div>
+            </div>                
+        
+            <div class="article" id="m5">
+                
+                        <div class="events">
+                            <ul>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        11
+                                    </span><span class="month">
+                                        JUL
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/July/Selection-results-published-for-April-admission-round-autumn-semester/">Selection results published for Second round, autumn →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        26
+                                    </span><span class="month">
+                                        JUL
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/July/Last-day-to-reply-to-your-selection-notification-for-the-April-admission-round-autumn-semester/">Last day to reply to offers for Second round autumn →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                        </ul></div>
+                                    
+                <div class="faq">                                                    
+                    <div class="humany-widget humany-list humany-en humany-calender-english-july humany-display-to-common-questions-lightbox humany-loaded"><div data-reactroot="" class="humany-toplist humany-guidelist humany-toplist humany-toplist-widget"><h2 class="humany-h2">Common questions</h2><ol class="humany-guide-list"><li><a href="#humany-common-questions-lightbox=/1098/what-does-reserve-mean-and-what-s-next/;referrer:calender-english-july" data-guide-id="1098" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 7 -->What does 'Reserve' mean and what's next?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1088/how-will-i-receive-my-admissions-results/;referrer:calender-english-july" data-guide-id="1088" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 11 -->How will I receive my admissions results? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1100/how-important-is-it-that-i-reply-to-my-admissions-offer/;referrer:calender-english-july" data-guide-id="1100" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 15 -->How important is it that I reply to my admissions offer?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1084/it-s-after-the-deadline-for-submitting-supporting-documents-is-it-too-late-for-me-to-complete-my-application/;referrer:calender-english-july" data-guide-id="1084" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 19 -->It's after the deadline for submitting supporting documents. Is it too late for me to complete my application? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1104/do-i-need-to-reply-to-my-second-notification-of-selection-results/;referrer:calender-english-july" data-guide-id="1104" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 23 -->Do I need to reply to my second notification of selection results? <!-- /react-text --></a></li></ol><a href="#humany-common-questions-lightbox=/;referrer:calender-english-july" class="humany-pager" data-humany-tabstop="0"><b class="humany-icon"></b><!-- react-text: 26 -->Show more common questions<!-- /react-text --></a></div></div> 
+                    
+                    
+                </div>
+            </div>                
+        
+            <div class="article" id="m6">
+                
+                        <div class="events">
+                            <ul>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        1
+                                    </span><span class="month">
+                                        AUG
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/August/Second-selection-results-published-for-April-admission-round-autumn-semester/">Second selection results published for Second round autumn→</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        15
+                                    </span><span class="month">
+                                        AUG
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/August/Deadline-for-applying/">First round spring semester application deadline →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="date"><span class="day">
+                                        26
+                                    </span><span class="month">
+                                        AUG
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/August/One-week-left-to-submit-documents-and-the-application-for-Spring/">One week left to submit docs and app. fee for First round spring →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                            <li class="clearfix">
+                                <div class="dates">
+                                    <span class="information"><span class="day">
+                                        &nbsp;
+                                    </span><span class="month">
+                                        &nbsp;
+                                    </span></span>
+                                </div>
+                                <div class="event">
+                                    <div class="heading4">
+                                        <a href="/en/All-you-need-to-know1/Calendar/August/looking-for-scholarship-information/">Looking for scholarship information? →</a>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                    
+                        </ul></div>
+                                    
+                <div class="faq">                                                    
+                    <div class="humany-widget humany-list humany-en humany-calender-english-august humany-display-to-common-questions-lightbox humany-loaded"><div data-reactroot="" class="humany-toplist humany-guidelist humany-toplist humany-toplist-widget"><h2 class="humany-h2">Common questions</h2><ol class="humany-guide-list"><li><a href="#humany-common-questions-lightbox=/1056/it-s-past-the-deadline-and-i-forgot-to-apply-is-it-too-late/;referrer:calender-english-august" data-guide-id="1056" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 7 -->It's past the deadline and I forgot to apply. Is it too late?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1052/how-many-courses-and-programmes-can-i-apply-for/;referrer:calender-english-august" data-guide-id="1052" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 11 -->How many courses and programmes can I apply for? <!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1083/how-will-i-know-if-everything-is-ok-with-the-documentation-i-submitted/;referrer:calender-english-august" data-guide-id="1083" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 15 -->How will I know if everything is OK with the documentation I submitted?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1142/i-am-interested-in-scholarships-where-can-i-find-more-information/;referrer:calender-english-august" data-guide-id="1142" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 19 -->I am interested in scholarships. Where can I find more information?<!-- /react-text --></a></li><li><a href="#humany-common-questions-lightbox=/1097/where-can-i-get-a-paper-copy-of-my-notification-of-selection-results-admission-results/;referrer:calender-english-august" data-guide-id="1097" class="humany-guide-link" data-humany-tabstop="0" title=""><b class="humany-icon"></b><!-- react-text: 23 -->Where can I get a paper copy of my Notification of Selection Results (admission results)?<!-- /react-text --></a></li></ol><a href="#humany-common-questions-lightbox=/;referrer:calender-english-august" class="humany-pager" data-humany-tabstop="0"><b class="humany-icon"></b><!-- react-text: 26 -->Show more common questions<!-- /react-text --></a></div></div> 
+                    
+                    
+                </div>
+            </div>                
+        
+        
+    
+</div>
+</body>
+</html>
